@@ -12,17 +12,25 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :price %><br>
-    <%= f.number_field :price %>
+    <%= f.label :course_id %><br>
+    <%= f.collection_select(:course_id, Course.all, :id, :name, :prompt=>"App/Main/Dessert") %>
   </div>
+
   <div class="field">
     <%= f.label :name %><br>
     <%= f.text_field :name %>
   </div>
+
+  <div class="field">
+  <%= f.label :price %><br>
+  <%= f.number_field :price %>
+  </div>
+
   <div class="field">
     <%= f.label :description %><br>
     <%= f.text_area :description %>
   </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>
