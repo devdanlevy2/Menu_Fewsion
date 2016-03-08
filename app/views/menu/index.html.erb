@@ -8,3 +8,21 @@
     <%= image_tag asset_url("BeefGoulash.jpg"), id: "BeefGoulash" %>
     <%= image_tag asset_url("Baked-Alaska-Photo600.jpg"), id: "Baked-Alaska-Photo600" %>
   </div>
+
+  <p>
+  <strong>Appetizers</strong>
+  <%= Course.all.where(course_id: 1) %>
+  <br>
+</p>
+
+<p>
+  <strong>Mains</strong>
+  <%= Course.all.where(course_id: 2) %>
+  <br>
+</p>
+
+<p>
+  <strong>Desserts</strong>
+  <%= Course.all.where(course_id: 3) %>
+  <br>
+</p>
