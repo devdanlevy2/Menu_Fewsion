@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'dishes#index'
+  root 'menu#index'
   resources :dishes
 
   # The priority is based upon order of creation: first created -> highest priority.
